@@ -1,0 +1,45 @@
+### Product id
+@id=68991b526c1b0369b90b6398
+
+
+
+### GET all products
+GET http://localhost:3000/api/products
+
+### GET product by id
+GET http://localhost:3000/api/products/{{id}}
+
+### POST create new product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+"nombre": "Av-12",
+"precio": 129.99,
+"categoria": "Productos",
+"ruta_img": "http://localhost:3000/images/item4.jpg",
+"descripcion": "Protege pisos de piedra, cemento, barro cocido y plástico. Super brillo con polímero acrílico transparente. Fácil de aplicar, mantener y decapar."
+}
+
+
+### PUT update product
+PUT http://localhost:3000/api/products/{{id}}
+Content-Type: application/json
+
+{
+    "nombre": "Tablet",
+    "precio": 699.99,
+    "categoria": "Tecnología",
+    "descripcion": "lorem"
+}
+
+### PATCH partial update
+PATCH http://localhost:3000/api/products/{{id}}
+Content-Type: application/json
+
+{
+    "precio": 599.99
+}
+
+### DELETE product
+DELETE http://localhost:3000/api/products/{{id}}

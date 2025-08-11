@@ -1,0 +1,17 @@
+{
+    "name": "api-productos",
+    "version": "1.0.0",
+    "description": "API REST de productos - Proyecto Final Backend Módulo II",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node --watch index.js"
+    },
+    "dependencies": {
+        "cors": "2.8.5",
+        "dotenv": "^17.2.1",
+        "express": "^5.1.0",
+        "mongoose": "^8.17.0",
+        "zod": "^4.0.15"
+    }
+}

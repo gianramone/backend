@@ -1,0 +1,25 @@
+backend/
+├── public/                      # lógica de negocio de productos
+│   └── images/                  #
+|       ├── item.jpg             #
+|       ├── item1.jpg            #
+|       ├── item2.jpg            #
+|       ├── item3.jpg            #
+|       ├── item4.jpg            #
+├── controllers/                 # lógica de negocio de productos
+│   └── product.controller.js
+├── models/                      # esquemas de mongoose
+│   └── product.model.js
+├── routes/                      # definición de rutas Express
+│   └── product.routes.js
+├── schemas/                     # validaciones Zod
+│   └── product.schema.js
+├── config/                      # configuración (ej: db)
+│   └── db.js
+├── index.js                     # entry point principal
+├── .env                         # variables de entorno
+├── package.json                 # dependencias y scripts
+├── api.http                     # pruebas REST para extensión REST Client
+└── public-api/                  # documentación estilo Swagger (GET only)
+    └── index.html
+
